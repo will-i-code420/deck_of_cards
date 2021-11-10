@@ -7,6 +7,13 @@ function createDeck() {
 			deck.push({ value, suit });
 		}
 	}
-	console.log(deck);
 	return deck;
 }
+
+function drawCard(cards) {
+	const idx = Math.floor(Math.random() * cards.length);
+	const card = cards.splice(idx, 1);
+	return card;
+}
+
+const deck = createDeck();
