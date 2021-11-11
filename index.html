@@ -5,13 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deck Of Cards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
 <body>
-    <article id="game-board">
-        <button class="start-game">Play A Hand</button>
-        <button class="draw-card">Draw Card</button>
-    </article>
+    <section id="game-board" class="container is-fluid my-5">
+        <p id="card-container">
+            <div class="columns">
+                <div class="column card is-2 is-offset-1">
+                    <div class="card-image">
+                      <figure class="image is-128x128">
+                        <img src="" alt="Placeholder image">
+                      </figure>
+                    </div>
+                  </div>
+            <div class="card column is-2">
+                <div class="card-image">
+                  <figure class="image is-128x128">
+                    <img src="" alt="Placeholder image">
+                  </figure>
+                </div>
+              </div>
+              <div class="card column is-2">
+                <div class="card-image">
+                  <figure class="image is-128x128">
+                    <img src="" alt="Placeholder image">
+                  </figure>
+                </div>
+              </div>
+              <div class="card column is-2">
+                <div class="card-image">
+                  <figure class="image is-128x128">
+                    <img src="" alt="Placeholder image">
+                  </figure>
+                </div>
+              </div>
+              <div class="card column is-2">
+                <div class="card-image">
+                  <figure class="image is-128x128">
+                    <img src="" alt="Placeholder image">
+                  </figure>
+                </div>
+              </div>
+          </div>
+        </p>
+        <p class="buttons is-centered">
+            <button class="button is-primary start-game">Play A Hand</button>
+            <button class="button is-danger end-game">Stop Playing</button>
+            <button class="button is-success draw-card">Draw Card(s)</button>
+            <button class="button is-warning fold-hand">Fold</button>
+        </p>
+        
+    </section>
 </body>
 </html>
