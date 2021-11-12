@@ -29,3 +29,10 @@ const playerDeck = {
 		hand.push(deck.splice(0, num));
 	}
 };
+
+const buttons = document.querySelectorAll('button');
+buttons.forEach((btn) => {
+	btn.addEventListener('click', (e) => {
+		console.log(e.target.value);
+	});
+});
