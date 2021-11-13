@@ -25,114 +25,29 @@
           </section>
         <section id="game-board" class="section">
             <p id="card-container">
-                <div class="columns">
-                    <div class="column card is-2 is-offset-1">
-                        <div class="card-image">
-                          <figure class="image">
-                            <svg viewBox="0 0 300 300"
-                            width="300"
-                            height="300"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-
-      <!-- The cards have a natural width of 169.075 and a height of 244.640. Its
-        center is located at (+98.0375, +122.320). -->
-      <!-- The original back color was #0062ff. The color of the back card can
-        be changed by setting the fill on the USE-element. -->
-
-        <use href="./images/cards/svg-cards/svg-cards.svg#joker_black" x="0" y="0"/>
-    </svg>
-                          </figure>
-                        </div>
-                      </div>
-                <div class="card column is-2">
-                    <div class="card-image">
-                      <figure class="image">
-                        <svg viewBox="0 0 300 300"
-      width="300"
-      height="300"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-
-      <!-- The cards have a natural width of 169.075 and a height of 244.640. Its
-        center is located at (+98.0375, +122.320). -->
-      <!-- The original back color was #0062ff. The color of the back card can
-        be changed by setting the fill on the USE-element. -->
-
-        <use href="./images/cards/svg-cards/svg-cards.svg#heart_king" x="0" y="0"/>
-    </svg>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="card column is-2">
-                    <div class="card-image">
-                      <figure class="image">
-                        <svg viewBox="0 0 300 300"
-      width="300"
-      height="300"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-
-      <!-- The cards have a natural width of 169.075 and a height of 244.640. Its
-        center is located at (+98.0375, +122.320). -->
-      <!-- The original back color was #0062ff. The color of the back card can
-        be changed by setting the fill on the USE-element. -->
-
-        <use href="./images/cards/svg-cards/svg-cards.svg#club_1" x="0" y="0"/>
-    </svg>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="card column is-2">
-                    <div class="card-image">
-                      <figure class="image">
-                        <svg viewBox="0 0 300 300"
-      width="300"
-      height="300"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-
-      <!-- The cards have a natural width of 169.075 and a height of 244.640. Its
-        center is located at (+98.0375, +122.320). -->
-      <!-- The original back color was #0062ff. The color of the back card can
-        be changed by setting the fill on the USE-element. -->
-
-        <use href="./images/cards/svg-cards/svg-cards.svg#spade_10" x="0" y="0"/>
-    </svg>
-                      </figure>
-                    </div>
-                  </div>
-                  <div class="card column is-2">
-                    <div class="card-image">
-                      <figure class="image">
-                        <svg viewBox="0 0 300 300"
-      width="300"
-      height="300"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      >
-
-      <!-- The cards have a natural width of 169.075 and a height of 244.640. Its
-        center is located at (+98.0375, +122.320). -->
-      <!-- The original back color was #0062ff. The color of the back card can
-        be changed by setting the fill on the USE-element. -->
-
-        <use href="./images/cards/svg-cards/svg-cards.svg#diamond_jack" x="0" y="0"/>
-    </svg>
-                      </figure>
-                    </div>
-                  </div>
+                <div id="card-container-columns" class="columns">
+                    
+                
+                  
+                  
+                   
+              
               </div>
             </p>
             <p class="buttons is-centered">
                 <button type="button" class="button is-primary" value="start">Play A Hand</button>
-                <button type="button" class="button is-danger" value="end">Stop Playing</button>
-                <button type="button" class="button is-success" value="draw">Draw Card(s)</button>
-                <button type="button" class="button is-warning" value="fold">Fold</button>
+                <button type="button" class="button is-danger" value="end" disabled>Stop Playing</button>
+                <button type="button" class="button is-warning is-centered" value="fold" disabled>Fold Hand</button>
+                
+                <div class="field has-addons is-grouped is-grouped-centered">
+                    <div class="control">
+                      <input class="input draw-amt" type="number" placeholder="How Many Cards You Want">
+                    </div>
+                    <div class="control">
+                        <button type="submit" class="button is-success" value="draw" disabled>Draw</button>
+                    </div>
+                  </div>
+                
             </p>
             
         </section>
